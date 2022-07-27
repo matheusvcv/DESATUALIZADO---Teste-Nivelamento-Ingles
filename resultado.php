@@ -2,7 +2,7 @@
 
 	require 'autoload.php';
 
-	$usuario = New \nivelamento\teste\Usuario($_POST['nome']);
+	$usuario = New \nivelamento\teste\Usuario($_POST['nome'], $_POST['genero']);
 	$contato = New \nivelamento\teste\Contato($_POST['email'], $_POST['endereco'], $_POST['cep'], $_POST['telefone']);
 ?>
 
@@ -16,12 +16,12 @@
 </head>
 <body>
 
+	<p><?php echo $usuario->getTratamento();?>, segue abaixo suas informações e o resultado do seu teste:</p>
 	<ul>
 		<li><strong>Nome:</strong> <?php echo $usuario->getNome(); ?></li>
 		<li><strong>Sobrenome:</strong> <?php echo $usuario->getSobrenome(); ?></li>
 		<li><strong>Usuário:</strong> <?php echo $contato->getUsuario(); ?></li>
-		<li><strong>CPF:</strong></li>
-		<li><strong>Gênero:</strong></li>
+		<li><strong>Gênero:</strong> <?php echo $usuario->getGenero(); ?></li>
 		<li><strong>Endereço:</strong> <?php echo $contato->getEndereco(); ?></li>
 		<li><strong>E-mail:</strong> <?php echo $contato->getEmail(); ?></li>
 		<li><strong>Telefone:</strong> <?php echo $contato-> getTelefone();?> </li>

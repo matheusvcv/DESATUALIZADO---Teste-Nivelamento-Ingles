@@ -14,9 +14,8 @@
 
 			<h2>Informações pessoais:</h2>
 			<p>Digite seu Nome Completo: <input type="text" name="nome" placeholder="Nome completo"></p>
-			<p>Digite seu CPF:<input type="text" name="cpf" placeholder="Digite seu CPF"></p>
 			<p>Informe sua data de nascimento: <input type="date" name="nascimento"></p>
-			<p>Informe seu gênero:<select name="gênero" placeholder="Escolha uma opção:">
+			<p>Informe seu gênero:<select name="genero" placeholder="Escolha uma opção:">
 					<option value="ND">Escolha uma opção:</option>
 					<option value="M">Masculino</option>
 					<option value="F">Feminino</option>
