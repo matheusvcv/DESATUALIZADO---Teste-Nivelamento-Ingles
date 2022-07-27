@@ -10,7 +10,9 @@
 
 		private $cep;
 
-		public function __construct(string $email, string $endereco, string $cep)
+		private $telefone;
+
+		public function __construct(string $email, string $endereco, string $cep, string $telefone)
 		{
 
 			if($this->validaEmail($email) !== false){
@@ -25,6 +27,16 @@
 			$this->endereco = $endereco;
 
 			$this->cep = $cep;
+
+			if($this->validaTelefone($telefone)){
+
+				$this->setTelefone($telefone);
+			}else{
+
+				$this->setTelefone("Telefone inválido.");
+			}
+
+			
 		}
 
 		public function getUsuario(): string
@@ -63,4 +75,21 @@
 
 			return implode(' - ', $enderecoCep);
 		}
+
+		public function getTelefone(): string
+		{
+			return $this->telefone;
+		}
+
+		public function validaTelefone(string $telefone)
+		{
+			return preg_match('/^[0-9]{5}-[0-9]{4}$/', $telefone, $encontrados);
+		}
+
+		private function setTelefone(string $telefone): void
+		{
+			$this->telefone = $telefone;
+		}
+
+
 	}
