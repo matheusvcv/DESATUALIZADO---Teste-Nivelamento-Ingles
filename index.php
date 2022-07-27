@@ -14,7 +14,7 @@
 
 	<P>Um dos maiores desafios enfrentados por professores de inglês que optam por ensinar remotamente, é conseguir nivelar o nível de proficiência de seus alunos. O presente questionário tem o objetivo de auxilia-los com essa tarefa, oferencendo perguntas relacionadas a gramática, que vão ajudar a entender o nível de conhecimento de cada estudante.</P>
 
-	<p>Cadastre-se e faça o teste clicando no botão abaixo ou <a href="cadastro.php">aqui.</a></p>
-	<a href="cadastro.php"><img src="img/botao.png"></a>
+	<p>Cadastre-se e faça o teste clicando no botão abaixo ou <a href="nivelamento.php">aqui.</a></p>
+	<a href="nivelamento.php"><img src="img/botao.png"></a>
 </body>
 </html>
