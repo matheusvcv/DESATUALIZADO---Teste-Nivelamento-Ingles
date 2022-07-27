@@ -3,7 +3,7 @@
 	require 'autoload.php';
 
 	$usuario = New \nivelamento\teste\Usuario($_POST['nome']);
-	$contato = New \nivelamento\teste\Contato($_POST['email']);
+	$contato = New \nivelamento\teste\Contato($_POST['email'], $_POST['endereco'], $_POST['cep']);
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +22,8 @@
 		<li><strong>Usuário:</strong> <?php echo $contato->getUsuario(); ?></li>
 		<li><strong>CPF:</strong></li>
 		<li><strong>Gênero:</strong></li>
-		<li><strong>Endereço:</strong></li>
-		<li><strong>E-mail:</strong><?php echo $contato->getEmail(); ?></li>
+		<li><strong>Endereço:</strong> <?php echo $contato->getEndereco(); ?></li>
+		<li><strong>E-mail:</strong> <?php echo $contato->getEmail(); ?></li>
 		<li><strong>Telefone:</strong></li>
 	</ul>
 <?php

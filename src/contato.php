@@ -6,9 +6,12 @@
 	{
 		private $email;
 
-		public function __construct(string $email)
+		private $endereco;
+
+		private $cep;
+
+		public function __construct(string $email, string $endereco, string $cep)
 		{
-			$this->email = $email;
 
 			if($this->validaEmail($email) !== false){
 
@@ -18,6 +21,10 @@
 
 				$this->setEmail("E-mail inválido!");
 			}
+
+			$this->endereco = $endereco;
+
+			$this->cep = $cep;
 		}
 
 		public function getUsuario(): string
@@ -34,7 +41,7 @@
 			}
 		}
 		
-		public function validaEmail(string $email): string
+		public function validaEmail(string $email)
 		{
 			return filter_var($email, FILTER_VALIDATE_EMAIL);
 		}
@@ -47,5 +54,13 @@
 		public function getEmail(): string
 		{
 			return $this->email; 
+		}
+
+		public function getEndereco(): string
+		{
+
+			$enderecoCep= [$this->endereco, $this->cep];
+
+			return implode(' - ', $enderecoCep);
 		}
 	}
