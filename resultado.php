@@ -1,5 +1,35 @@
 <?php
 
+	require 'autoload.php';
+
+	$usuario = New \nivelamento\teste\Usuario($_POST['nome']);
+	$contato = New \nivelamento\teste\Contato($_POST['email']);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" width="device-width initial-scale-1.0">
+	<link rel="shortcut icon" href="img/cosvi.png" type="image/x-icon">
+	<title>Resultado</title>
+</head>
+<body>
+
+	<ul>
+		<li><strong>Nome:</strong> <?php echo $usuario->getNome(); ?></li>
+		<li><strong>Sobrenome:</strong> <?php echo $usuario->getSobrenome(); ?></li>
+		<li><strong>Usuário:</strong> <?php echo $contato->getUsuario(); ?></li>
+		<li><strong>CPF:</strong></li>
+		<li><strong>Gênero:</strong></li>
+		<li><strong>Endereço:</strong></li>
+		<li><strong>E-mail:</strong><?php echo $contato->getEmail(); ?></li>
+		<li><strong>Telefone:</strong></li>
+	</ul>
+<?php
+
+	error_reporting(0);
+
 	$respostaA = "a";
 	$respostaB="b";
 	$respostaC="c";
@@ -170,3 +200,9 @@
 	echo "Você acertou $acertou questões" . "<br>" . "Você errou $errou questões";
 
 ?>
+
+
+<body>
+
+</body>
+</html>
