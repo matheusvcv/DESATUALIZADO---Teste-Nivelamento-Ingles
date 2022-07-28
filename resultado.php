@@ -241,10 +241,11 @@
 	}
 
 	$total = $acertou + $errou;
+	$porcentagem = ($acertou/$total)*100;
 ?>
 		<div id="faixa">
 				<strong><?php echo "Você acertou $acertou questões" . "<br>" . "Você errou $errou questões"; ?></strong><br>
-				<p>O teste possui um total de <?php $total ?> questões.</p>
+				<p>O teste possui um total de <strong><?php echo $total ?></strong> questões. Isso sgnifica que você teve sucesso em <strong><?php echo $porcentagem ?>%</strong>. Faça um screenshot desta tela, e mostre para o seu(sua) professor(a).</p>
 		</div>
 	</body>
 </html>
