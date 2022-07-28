@@ -12,20 +12,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" width="device-width initial-scale-1.0">
 	<link rel="shortcut icon" href="img/cosvi.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
 	<title>Resultado</title>
 </head>
 <body>
+	<div align="center">
+		<img src="img/cosvib.png" alt="logo CVE">
+	</div>
+	<br><div id="faixa">
+			<p><strong>Resultado do teste de nivelamento de <?php echo $usuario->getNome() ." ". $usuario->getSobrenome(); ?></strong></p>
+	</div>
+	<div id="container">
 
-	<p><?php echo $usuario->getTratamento();?>, segue abaixo suas informações e o resultado do seu teste:</p>
-	<ul>
-		<li><strong>Nome:</strong> <?php echo $usuario->getNome(); ?></li>
-		<li><strong>Sobrenome:</strong> <?php echo $usuario->getSobrenome(); ?></li>
-		<li><strong>Usuário:</strong> <?php echo $contato->getUsuario(); ?></li>
-		<li><strong>Gênero:</strong> <?php echo $usuario->getGenero(); ?></li>
-		<li><strong>Endereço:</strong> <?php echo $contato->getEndereco(); ?></li>
-		<li><strong>E-mail:</strong> <?php echo $contato->getEmail(); ?></li>
-		<li><strong>Telefone:</strong> <?php echo $contato-> getTelefone();?> </li>
-	</ul>
+		<p><?php echo $usuario->getTratamento();?>, segue abaixo suas informações e o resultado do seu teste:</p>
+		<ul>
+			<li><strong>Nome:</strong> <?php echo $usuario->getNome(); ?></li>
+			<li><strong>Sobrenome:</strong> <?php echo $usuario->getSobrenome(); ?></li>
+			<li><strong>Usuário:</strong> <?php echo $contato->getUsuario(); ?></li>
+			<li><strong>Gênero:</strong> <?php echo $usuario->getGenero(); ?></li>
+			<li><strong>Endereço:</strong> <?php echo $contato->getEndereco(); ?></li>
+			<li><strong>E-mail:</strong> <?php echo $contato->getEmail(); ?></li>
+			<li><strong>Telefone:</strong> <?php echo $contato-> getTelefone();?> </li>
+		</ul>
+	</div>
 <?php
 
 	error_reporting(0);
@@ -196,13 +205,10 @@
 		$errou++;
 	}
 
-
-	echo "Você acertou $acertou questões" . "<br>" . "Você errou $errou questões";
-
 ?>
 
-
-<body>
-
-</body>
+		<div id="faixa">
+				<strong><?php echo "Você acertou $acertou questões" . "<br>" . "Você errou $errou questões"; ?></strong>
+		</div>
+	</body>
 </html>
