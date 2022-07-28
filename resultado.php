@@ -63,11 +63,16 @@
 	$res18 = $_POST['questao18'];
 	$res19 = $_POST['questao19'];
 	$res20 = $_POST['questao20'];
-
-	
+	$res21 = $_POST['questao21'];
+	$res22 = $_POST['questao22'];
+	$res23 = $_POST['questao23'];
+	$res24 = $_POST['questao24'];
+	$res25 = $_POST['questao25'];	
 
 	$acertou= 0;
 	$errou= 0;
+
+	/*$porcetagem = ;*/
 
 
 	if($res1 === $respostaB ){
@@ -205,10 +210,41 @@
 		$errou++;
 	}
 
-?>
+	if($res21 === $respostaB){
+		$acertou++;
+	}else{
+		$errou++;
+	}
 
+	if($res22 === $respostaB){
+		$acertou++;
+	}else{
+		$errou++;
+	}
+
+	if($res23 === $respostaC){
+		$acertou++;
+	}else{
+		$errou++;
+	}
+
+	if($res24 === $respostaC){
+		$acertou++;
+	}else{
+		$errou++;
+	}
+
+	if($res25 === $respostaB){
+		$acertou++;
+	}else{
+		$errou++;
+	}
+
+	$total = $acertou + $errou;
+?>
 		<div id="faixa">
-				<strong><?php echo "Você acertou $acertou questões" . "<br>" . "Você errou $errou questões"; ?></strong>
+				<strong><?php echo "Você acertou $acertou questões" . "<br>" . "Você errou $errou questões"; ?></strong><br>
+				<p>O teste possui um total de <?php $total ?> questões.</p>
 		</div>
 	</body>
 </html>

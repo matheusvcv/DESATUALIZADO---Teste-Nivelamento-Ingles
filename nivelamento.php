@@ -154,6 +154,42 @@
 				a) <input type="radio" name="questao20" value="a">breaking </br>
 				b) <input type="radio" name="questao20" value="b">cheating<br>
 				c) <input type="radio" name="questao20" value="c">committing<br>
+		
+
+				<strong><p>21 - Why on earth isn’t Josh here yet? ....... for him for over an hour!</p></strong>
+
+				a) <input type="radio" name="questao21" value="a">I’m waiting</br>
+				b) <input type="radio" name="questao21" value="b">I’ve been waiting<br>
+				c) <input type="radio" name="questao21" value="c">I’ve waited<br>
+
+
+				<strong><p>22 - “It’s pouring down, and it’s freezing.” What are the weather conditions? </p></strong>
+
+				a) <input type="radio" name="questao22" value="a">high winds and snow</br>
+				b) <input type="radio" name="questao22" value="b">heavy rain and cold temperatures<br>
+				c) <input type="radio" name="questao22" value="c">thick cloud but quite warm<br>
+
+				
+				<strong><p>23 - ....... feeling OK? You don’t look very well.</p></strong>
+
+				a) <input type="radio" name="questao23" value="a">Do you</br>
+				b) <input type="radio" name="questao23" value="b">You are<br>
+				c) <input type="radio" name="questao23" value="c">Are you<br>
+
+
+				<strong><p>24 - Daniel’s hair is getting far too long; he should ....... soon.</p></strong>
+
+				a) <input type="radio" name="questao24" value="a">cut it</br>
+				b) <input type="radio" name="questao24" value="b">have cut it<br>
+				c) <input type="radio" name="questao24" value="c">have it cut<br>
+
+
+				<strong><p>25 - Mandy works for a computer software company. She got ....... recently, and so now she’s an area manager.</p></strong>
+
+				a) <input type="radio" name="questao25" value="a">made redundant</br>
+				b) <input type="radio" name="questao25" value="b">promoted<br>
+				c) <input type="radio" name="questao25" value="c">a raise<br>
+
 			</div>
 			<div align="center">
 				<br><input type="Submit" id="submit" value="Finish Test">
