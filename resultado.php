@@ -248,6 +248,7 @@
 				<p>O teste possui um total de <strong><?php echo $total ?></strong> questões. Isso sgnifica que você teve sucesso em <strong><?php echo $porcentagem ?>%</strong>. Faça um screenshot desta tela, e mostre para o seu(sua) professor(a).</p>
 		</div>
 		<div align="center">
+			<a href="index.php"><button>Voltar</button></a>
 		<img src="img/cosvib.png" alt="logo CVE">
 	</div>
 	</body>
