@@ -250,8 +250,5 @@
 		<div align="center">
 			<a href="index.php"><button class="button">Voltar</button></a>
 		</div>
-		<div align="center">
-			<img src="img/cosvib.png" alt="logo CVE">
-		</div>
 	</body>
 </html>
